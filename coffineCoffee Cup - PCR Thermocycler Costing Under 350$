@@ -1,0 +1,183 @@
+
+This Instructable will describe how to make a PCR Thermocycler for Field or Teaching applications, from scratch, using a commercial temperature controller, a temperature probe, a PC cooling fan and basic shop tools.
+
+The unit performs reliably, is menu driven for programming various PCR (Polymerase Chain Reaction) "recipes" (so you don't have to use a computer but there is free downloadable software that will let you do this and we provide the PIN diagram for making the cable). It cycles temperatures at 0.15 degree centigrade per minute. The difference in actual temperature (Process variable) from "control" temperature (Set variable) varies about 5 degree centigrade. That means we set the temperature at 5 degrees higher than the temperature we want to achieve. This is due to the bias in the thermocouple probe.
+
+In a Nutshell: We use a piece of aluminum rod, drill a 1/4" hole in the center of one end for a cartridge heater and another hole near the rim of the same end for a thermocouple (temperature sensor). Additional holes in the same end of the rod are for sample tubes (0.2 ml eppendorf tubes).
+
+This "heating block" is positioned on a small bracket over a PC cooling fan. Both are placed inside of a metal coffee cup. A commercial temperature controller ( available from Omega Engineering) is used to control the heating and cooling cycles. End of story. 
+
+It reaches and holds (soaks) at various temperatures and can also be used for "In situ" Hybridization protocols. It can be programmed from the face plate of the controller or connected to a computer by a serial cable. The control software is a free download. 
+
+
+Step 1: What Is a Thermocycler?
+
+What is a Thermocycler?
+
+A thermocycler raises and lowers temperature. For molecular or DNA applications it needs to heat up to about 90-95 degrees centigrade. DNA which usually exists in double strands in a helix (like a spiral staircase) and at about 92 degrees centigrade the strands will break and fall apart.
+The solution that the DNA sample is in has extra "bases" that will connect to the broken rungs of the ladder to make two new ladders. To do this part we need to cool down the sample to the point where "bases" can connect to the separated DNA strands. If you cycle through this temperature range from 20-30 times you can make millions of copies of the original DNA. 
+
+So in summary, a thermocycler can make a million copies of one original piece of DNA. These copies can then be used for other types of research. The prototype that we build can take 6 sample tubes (0.2 ml eppendorf tubes). There is room for one blank, the temperature probe and a central cartridge heater.
+
+Learning sites that are excellent: 
+
+- DNA Extraction Online Tutorial
+- Home DNA extarction of DNA (Instructables)
+- PCR
+- PCR Song (must hear)
+- PCR Protocols
+
+Step 2: Completed Version of the Coffee Cup Thermocycler:
+
+Here is the final version showing a metal coffee cup that contains the heating block and a PC cooling fan. The lower half is a coffee "can" that contains the temperature controller. If your wondering why a coffee can and coffee cup, that's all we had to work with.
+
+Parts List and links to sources:
+
+6061 Aluminum Rod 1.5" round stock about 5" in length
+Cartridge heater 1" length, 1/4" diam 80W
+Temperature controller Omega.com CN8282-R1R2C2
+Instruction manual
+Free Software for serial connection to computer
+40 mm PC 110 volt cooling fan
+
+Other materials:
+- 4 foot extension cord, three prong, to cut off and use as power cord.
+- Metal coffee cup and coffee can (your on your own here)
+- Hand drill
+- Tap for putting threads in the hole for the temperature probe #7 drill and 1/4-20 Tap.
+- Basic tools (hammer, screw driver, pliers, wire cutters etc...)
+
+Step 3: Make the Heating Head: Machinist and Hobbyist Approaches:
+
+
+
+
+
+
+Show All 13 Items
+Make the Heating head. See following images.
+
+This aluminum rod is used to make the heating head. 
+
+A center hole 1/4" will be for the cartridge heater.
+
+7 holes are drilled on the same end of the rod for the 6 sample tubes and one hole for the 
+thermocouple temperature probe. The hole for the temperature probe is made with a
+#7 drill and a 1/4-20 tap to thread the 3/4" deep hole. 
+
+
+Step 4: Making the Coffee Cup Part of the Thermocycler:
+
+
+
+
+Make the Coffee Cup part of the Coffee Cup PCR system.
+
+We used a fly cutter to make the hole in the bottom of the coffee cup (mug).
+
+Four smaller holes are for the feet that attach to the mounting holes on the fan that is 
+inside of the mug.
+
+Mark the holes with the fan sitting on the outside of the mug.
+
+Step 5: Wire the Controller:
+
+
+
+
+
+Wire the controller:
+
+Read the warning in the manual that comes with the temperature controller!
+
+Instruction manual
+
+See the shop notes pages below that explain various aspects of the wiring.
+
+
+Step 6: Performance:
+
+Performance evaluation:
+
+The serial cable is connected to the controller.
+The free downloaded software form Omega.com is used to write a recipe for the following tests.
+The data is "logged" to data files that were imported into excel for graphing.
+
+Test:: PASS
+
+Pass - Hold at 50 degree centigrade up to 10 hours.
+
+Pass - Hold at 92 degrees centigrade for 30 minutes.
+
+Pass - Run menu (recipe) to go from RT (room temp) to 55 over 4 minutes; then
+Loop 25 times: from 55 to 72 where you soak for 2 minutes, then raise temperature to
+92 where you soak for 1 minute; then at end of the cycles hold at 55 degree 
+centigrade indefinitely.
+
+Step 7: Free Software
+
+Screen grabs from the free software which lets you control the unit over a 
+serial cable.
+
+Free Software for serial connection to computer
+
+Downloading the free Software from the Omega Engineering website lets
+you control the "temperature controller" and quickly write complex "recipes" to
+store into the unit and run at any time.
+
+You don't need to use the serial cable since the unit can be programmed to 
+run recipes from the front panel, but it is a quick way
+to test and optimize the temperature parameters while capturing the data to 
+a log file that you can import into excel for graphing.
+
+The software also has a graph function but it is somewhat limited.
+
+
+Step 8: Where Do We Go From Here:
+
+Where are we going from here?
+
+- Swap out heating heads for Chromogenic In Situ Hybridization, slide holder
+- Two sample heating block using ducted RC hobby fan
+- Vented "Tray block" with 20 sample deck
+- USB powered Micro PCR platform
+- USB control using "Phidget" interface and incorporate two Peltier Junctions 
+- Micro-controller based (Parallax) controller for computer free 9 volt version
+- Internet accessible interface using IOBridge
+
+- Make a single sample "Pen based" version that runs off of a USB port. 
+
+Step 9: Disclaimer (fair Warning):
+
+Follow ALL reasonable safety guidelines and actually 
+wear safety equipment related, but not limited to, the following: 
+
+1) Electrical currents that you should not play with. 
+2) Power-tools that you never read the instructions for.
+3) Any tools that you never learned to use properly.
+
+ESPECIALLY...
+
+4) Anything that heats up, pinches, cuts, squeezes, flies off, carries electric current, 
+causes other types of traumatic, caustic, thermal injury or biological contamination.
+
+5) This is a project for scientific teaching or field research and is NOT to be used
+for diagnostic testing!
+
+We are sharing our experience, NOT TELLING YOU WHAT TO DO.
+
+If you choose to try this then - it is at your own risk!
+
+No really, we're not kidding about this.
+Step 10: Project Overview:
+
+Facility: RWJUHH Experimental Pathology Division and  
+Center for Parabiotics Research
+
+Section: Prototype Applications - Research Projects 
+
+Application: Molecular Diagnosis and Medical Cytology
+
+Technique: Rapid Prototyping for field research
+
+Title: "Coffee-Cup" PCR Thermocylcer for field or teaching applications costing less than 350$
